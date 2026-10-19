@@ -10,6 +10,18 @@ import churchEntrance from '../assets/church_entrance.jpg';
 import sunflowersTrains from '../assets/sunflowers_trains.jpg';
 import sundayService from '../assets/sunday_service.jpg';
 
+// Historical Archive and Photo Assets
+import historyArchive1988 from '../assets/history_archive_1988.jpg';
+import historyArchive1990 from '../assets/history_archive_1990.jpg';
+import historyArchive1992 from '../assets/history_archive_1992.jpg';
+import history1988Before from '../assets/history_1988_interior_before.jpg';
+import history1988Wip from '../assets/history_1988_work_in_progress.jpg';
+import history1990Partition from '../assets/history_1990_partition_work.jpg';
+import history1990Completed from '../assets/history_1990_completed_interior.jpg';
+import history1992BackRoom from '../assets/history_1992_back_room.jpg';
+import history1993UpperRoom from '../assets/history_1993_upper_room.jpg';
+import history1992Playground from '../assets/history_1992_infants_playground.jpg';
+
 export default function Gallery() {
     const [activeFilter, setActiveFilter] = useState('all');
     const [lightboxIndex, setLightboxIndex] = useState(null);
@@ -119,6 +131,76 @@ export default function Gallery() {
             title: 'Garden working bee & fellowship',
             description: 'Volunteers and leaders weeding the community garden and sharing refreshments.',
             url: 'https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&q=80&w=800'
+        },
+        {
+            id: 16,
+            category: 'history',
+            title: 'Easter 1988: Sanctuary before pews removal',
+            description: 'Historic view of the chapel interior before removal of Victorian pews and modernisation.',
+            url: history1988Before
+        },
+        {
+            id: 17,
+            category: 'history',
+            title: '1988: Sanctuary refurbishment in progress',
+            description: 'Renovation work underway viewed through the inner door screen with ladder and stone masonry.',
+            url: history1988Wip
+        },
+        {
+            id: 18,
+            category: 'history',
+            title: '1990: Sanctuary partition works',
+            description: 'Mid-construction photo showing the glazed timber partition divider installation.',
+            url: history1990Partition
+        },
+        {
+            id: 19,
+            category: 'history',
+            title: 'Completed in 1990: Modernised sanctuary',
+            description: 'The newly redecorated sanctuary in 1990, featuring flexible seating and decorative arch banner.',
+            url: history1990Completed
+        },
+        {
+            id: 20,
+            category: 'history',
+            title: '1992: Services in the back room',
+            description: 'Church gatherings temporarily held in the rear hall whilst sanctuary alterations took place.',
+            url: history1992BackRoom
+        },
+        {
+            id: 21,
+            category: 'history',
+            title: '1993: Coffee in the Upper Room',
+            description: 'Fellowship after Sunday worship with members Diana Barker, David Barker, Julie Kingett, Joan + Alf.',
+            url: history1993UpperRoom
+        },
+        {
+            id: 22,
+            category: 'history',
+            title: '1992: Chapel from Infants School Playground',
+            description: 'Exterior view of the church building and courtyard from the Infants School Playground in 1992.',
+            url: history1992Playground
+        },
+        {
+            id: 23,
+            category: 'history',
+            title: 'Easter 1988 Archival Sheet & Notes',
+            description: 'Original historical archive sheet documenting the Easter 1988 renovation with handwritten records.',
+            url: historyArchive1988
+        },
+        {
+            id: 24,
+            category: 'history',
+            title: '1990 Completion Archival Sheet',
+            description: 'Original historical archive document recording the partition work and 1990 completed interior.',
+            url: historyArchive1990
+        },
+        {
+            id: 25,
+            category: 'history',
+            title: '1992-1993 Church Alterations Archival Sheet',
+            description: 'Original historical archive document recording back room worship, Upper Room coffee, and playground exterior.',
+            url: historyArchive1992
         }
     ];
 
@@ -160,6 +242,13 @@ export default function Gallery() {
                     style={{ padding: '8px 20px', borderRadius: 'var(--radius-full)', fontSize: '0.85rem' }}
                 >
                     Show All
+                </button>
+                <button
+                    className={`btn ${activeFilter === 'history' ? 'btn-primary' : 'btn-secondary'}`}
+                    onClick={() => setActiveFilter('history')}
+                    style={{ padding: '8px 20px', borderRadius: 'var(--radius-full)', fontSize: '0.85rem' }}
+                >
+                    History & Archives
                 </button>
                 <button
                     className={`btn ${activeFilter === 'drama' ? 'btn-primary' : 'btn-secondary'}`}

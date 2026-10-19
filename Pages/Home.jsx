@@ -32,7 +32,7 @@ export default function Home() {
                     </span>
                     <h1 className="hero-title" style={{ color: 'var(--white)' }}>A place to belong, grow in faith & serve our community</h1>
                     <p className="hero-subtitle">
-                        We are a vibrant, family-friendly church community located in the heart of South Molton. Everyone is welcome to join us on our journey of faith!
+                        South Molton Baptist Church is a welcoming community with Jesus at the centre; committed to Him, to each other and to sharing His good news.
                     </p>
                     <div className="hero-buttons">
                         <Link to="/about" className="btn btn-primary">Plan Your Visit</Link>
@@ -46,8 +46,22 @@ export default function Home() {
                 <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '48px', alignItems: 'center' }}>
                     <div>
                         <h2 style={{ fontSize: '2rem', marginBottom: '20px' }}>Who We Are & When We Meet</h2>
-                        <p style={{ fontSize: '1.1rem', color: 'var(--gray-500)', marginBottom: '16px' }}>
-                            South Molton Baptist Church is a gathered community of Christians. We believe that church isn't a building, but the people who make it up. We seek to follow Jesus Christ, showing His love in action throughout our local neighborhood.
+                        <div style={{
+                            padding: '16px 20px',
+                            backgroundColor: 'var(--primary-bg)',
+                            borderLeft: '4px solid var(--accent)',
+                            borderRadius: 'var(--radius-md)',
+                            marginBottom: '20px'
+                        }}>
+                            <div style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', color: 'var(--accent)', letterSpacing: '0.5px', marginBottom: '4px' }}>
+                                Our Mission
+                            </div>
+                            <p style={{ fontSize: '1.1rem', color: 'var(--primary)', fontStyle: 'italic', fontWeight: 600, margin: 0, lineHeight: 1.5 }}>
+                                "South Molton Baptist Church is a welcoming community with Jesus at the centre; committed to Him, to each other and to sharing His good news."
+                            </p>
+                        </div>
+                        <p style={{ fontSize: '1.05rem', color: 'var(--gray-500)', marginBottom: '16px' }}>
+                            We are a gathered community of Christians. We believe that church isn't a building, but the people who make it up. We seek to follow Jesus Christ, showing His love in action throughout our local neighborhood.
                         </p>
                         <p style={{ fontSize: '1rem', color: 'var(--gray-500)', marginBottom: '24px' }}>
                             Whether you have been going to church for years, or are looking for answers to life's big questions, you are always welcome here. We are an active member of <strong>Baptists Together</strong> and the <strong>South West Baptist Association</strong>.

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Heart, BookOpen, Clock, Users, ArrowRight, ShieldCheck, HelpCircle } from 'lucide-react';
+import { Heart, BookOpen, Clock, Users, ArrowRight, ShieldCheck, HelpCircle, Eye, X, ZoomIn, FileText, Calendar, Sparkles } from 'lucide-react';
 import andyImg from '../assets/andy.jpeg';
 import richardImg from '../assets/richard.jpeg';
 import helenImg from '../assets/helen.jpeg';
@@ -8,9 +8,22 @@ import chiemeImg from '../assets/chieme.jpeg';
 import christineImg from '../assets/christine.jpeg';
 import janetImg from '../assets/janet.jpeg';
 
+// Historical Archives & Photos
+import historyArchive1988 from '../assets/history_archive_1988.jpg';
+import historyArchive1990 from '../assets/history_archive_1990.jpg';
+import historyArchive1992 from '../assets/history_archive_1992.jpg';
+import history1988Before from '../assets/history_1988_interior_before.jpg';
+import history1988Wip from '../assets/history_1988_work_in_progress.jpg';
+import history1990Partition from '../assets/history_1990_partition_work.jpg';
+import history1990Completed from '../assets/history_1990_completed_interior.jpg';
+import history1992BackRoom from '../assets/history_1992_back_room.jpg';
+import history1993UpperRoom from '../assets/history_1993_upper_room.jpg';
+import history1992Playground from '../assets/history_1992_infants_playground.jpg';
+
 export default function About() {
     const location = useLocation();
     const [activeTab, setActiveTab] = useState('expect');
+    const [lightboxItem, setLightboxItem] = useState(null);
 
     useEffect(() => {
         const hash = location.hash.replace('#', '');
@@ -271,8 +284,8 @@ export default function About() {
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', textAlign: 'left' }}>
                             <div style={{ padding: '24px', background: 'var(--primary-bg)', borderRadius: 'var(--radius-md)', borderLeft: '4px solid var(--primary)' }}>
                                 <h3 style={{ color: 'var(--primary)', marginBottom: '8px' }}>Our Mission Statement</h3>
-                                <p style={{ fontStyle: 'italic', fontSize: '1.1rem', color: 'var(--dark)' }}>
-                                    "To know Christ and to make Him known; to represent His love within the South Molton community by words and deeds."
+                                <p style={{ fontStyle: 'italic', fontSize: '1.15rem', color: 'var(--dark)', fontWeight: 500, lineHeight: 1.6 }}>
+                                    "South Molton Baptist Church is a welcoming community with Jesus at the centre; committed to Him, to each other and to sharing His good news."
                                 </p>
                             </div>
 
@@ -317,53 +330,379 @@ export default function About() {
                 {/* HISTORY TAB */}
                 {activeTab === 'history' && (
                     <div id="history" className="fade-in">
-                        <h2 style={{ marginBottom: '16px' }}>Our History</h2>
-                        <p style={{ color: 'var(--gray-500)', marginBottom: '32px' }}>
-                            South Molton Baptist Church has a rich history of serving our local community for over a century. Here are some of our key milestones.
-                        </p>
+                        <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 36px' }}>
+                            <span style={{
+                                backgroundColor: 'var(--primary-bg)',
+                                color: 'var(--primary)',
+                                padding: '4px 14px',
+                                borderRadius: 'var(--radius-full)',
+                                fontSize: '0.8rem',
+                                fontWeight: 700,
+                                textTransform: 'uppercase',
+                                letterSpacing: '1px',
+                                marginBottom: '12px',
+                                display: 'inline-block'
+                            }}>
+                                Our Heritage & Journey of Faith
+                            </span>
+                            <h2 style={{ marginBottom: '12px', fontSize: '2.2rem' }}>Our Church History</h2>
+                            <p style={{ color: 'var(--gray-500)', fontSize: '1.05rem', lineHeight: 1.6 }}>
+                                South Molton Baptist Church has served the community of South Molton for over a century and a half. Discover key milestones in our journey, illustrated with authentic archival photographs and records documenting the transformation of our chapel.
+                            </p>
+                        </div>
 
+                        {/* Historical Timeline */}
                         <div className="timeline">
+                            {/* 1843 */}
                             <div className="timeline-item">
                                 <div className="timeline-dot"></div>
                                 <div className="timeline-year">1843</div>
                                 <div className="timeline-content">
-                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.15rem', marginBottom: '8px' }}>Early Gatherings</h3>
-                                    <p style={{ fontSize: '0.9rem', color: 'var(--gray-500)' }}>
-                                        A small group of Baptists began meeting in private rooms in South Molton to pray and study the Bible together, desiring to establish a permanent Baptist witness in the town.
+                                    <span className="timeline-badge">Foundations</span>
+                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.2rem', marginBottom: '8px' }}>Early Gatherings in South Molton</h3>
+                                    <p style={{ fontSize: '0.95rem', color: 'var(--gray-500)', lineHeight: 1.6 }}>
+                                        A small, faithful gathering of Baptists began meeting in private rooms in South Molton to pray and study the Bible together, desiring to establish a permanent Baptist witness in the town.
                                     </p>
                                 </div>
                             </div>
 
+                            {/* 1895 */}
                             <div className="timeline-item">
                                 <div className="timeline-dot"></div>
                                 <div className="timeline-year">1895</div>
                                 <div className="timeline-content">
-                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.15rem', marginBottom: '8px' }}>Chapel Construction</h3>
-                                    <p style={{ fontSize: '0.9rem', color: 'var(--gray-500)' }}>
+                                    <span className="timeline-badge">Chapel Dedication</span>
+                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.2rem', marginBottom: '8px' }}>Chapel Construction on New Road</h3>
+                                    <p style={{ fontSize: '0.95rem', color: 'var(--gray-500)', lineHeight: 1.6 }}>
                                         With funds raised by members and the assistance of the wider association, our current chapel buildings on New Road were constructed and dedicated for public worship.
                                     </p>
                                 </div>
                             </div>
 
+                            {/* 1970s */}
                             <div className="timeline-item">
                                 <div className="timeline-dot"></div>
                                 <div className="timeline-year">1970s</div>
                                 <div className="timeline-content">
-                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.15rem', marginBottom: '8px' }}>Building Extensions</h3>
-                                    <p style={{ fontSize: '0.9rem', color: 'var(--gray-500)' }}>
+                                    <span className="timeline-badge">Community Expansion</span>
+                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.2rem', marginBottom: '8px' }}>Building Extensions & Youth Rooms</h3>
+                                    <p style={{ fontSize: '0.95rem', color: 'var(--gray-500)', lineHeight: 1.6 }}>
                                         Extensions were added to include the kitchen, toilets, and the schoolroom (which now houses the Lighthouse children's group), expanding our ability to host youth works and mid-week clubs.
                                     </p>
                                 </div>
                             </div>
 
+                            {/* Easter 1988 */}
                             <div className="timeline-item">
                                 <div className="timeline-dot"></div>
-                                <div className="timeline-year">2010</div>
+                                <div className="timeline-year">Easter 1988</div>
                                 <div className="timeline-content">
-                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.15rem', marginBottom: '8px' }}>Renovations & Modernisation</h3>
-                                    <p style={{ fontSize: '0.9rem', color: 'var(--gray-500)' }}>
-                                        Major renovation works were undertaken to modernize the interior, replacing static pews with comfortable, flexible chairs, introducing central heating, and adding accessibility ramps.
+                                    <span className="timeline-badge">Historic Transformation</span>
+                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.2rem', marginBottom: '8px' }}>Removal of Pews & Sanctuary Redecoration</h3>
+                                    <p style={{ fontSize: '0.95rem', color: 'var(--gray-500)', lineHeight: 1.6 }}>
+                                        Easter 1988 marked the beginning of a decisive and visionary modernisation. The original fixed wooden pews were dismantled and removed, opening up the sanctuary into a flexible space suitable for modern worship, drama, and community fellowship.
                                     </p>
+
+                                    <div className="timeline-images">
+                                        <div
+                                            className="timeline-img-card"
+                                            onClick={() => setLightboxItem({
+                                                title: 'Easter 1988: Interior Before Removal of Pews',
+                                                description: 'Original archive photograph from Easter 1988 showing the Victorian pews and original sanctuary layout before redecoration.',
+                                                url: history1988Before
+                                            })}
+                                        >
+                                            <div className="img-container">
+                                                <img src={history1988Before} alt="Easter 1988 Interior before removal of pews" />
+                                                <div className="img-hover-overlay">
+                                                    <ZoomIn size={18} /> Click to expand
+                                                </div>
+                                            </div>
+                                            <div className="caption">
+                                                <strong>Easter 1988:</strong> Interior of church before removal of pews and redecoration.
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            className="timeline-img-card"
+                                            onClick={() => setLightboxItem({
+                                                title: 'Work In Progress: Sanctuary Refurbishment',
+                                                description: 'Sanctuary renovation underway, viewed through the wooden doorway frame with ladder and exposed stone wall.',
+                                                url: history1988Wip
+                                            })}
+                                        >
+                                            <div className="img-container">
+                                                <img src={history1988Wip} alt="Sanctuary Work In Progress" />
+                                                <div className="img-hover-overlay">
+                                                    <ZoomIn size={18} /> Click to expand
+                                                </div>
+                                            </div>
+                                            <div className="caption">
+                                                <strong>Work in Progress:</strong> Renovation underway inside the sanctuary.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* 1990 */}
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-year">1990</div>
+                                <div className="timeline-content">
+                                    <span className="timeline-badge">Modernisation Completed</span>
+                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.2rem', marginBottom: '8px' }}>Sanctuary Refurbishment & Reopening</h3>
+                                    <p style={{ fontSize: '0.95rem', color: 'var(--gray-500)', lineHeight: 1.6 }}>
+                                        Completed in 1990, the sanctuary re-opened with a beautifully refurbished interior: flexible modern seating replacing the heavy pews, fresh wall finishes, an arched alcove with celebratory scripture banner, and improved heating and carpet.
+                                    </p>
+
+                                    <div className="timeline-images">
+                                        <div
+                                            className="timeline-img-card"
+                                            onClick={() => setLightboxItem({
+                                                title: 'Sanctuary Partition Works in Progress',
+                                                description: 'Construction of the new glazed wooden screen partition and floor installation inside the main sanctuary.',
+                                                url: history1990Partition
+                                            })}
+                                        >
+                                            <div className="img-container">
+                                                <img src={history1990Partition} alt="Sanctuary Partition Work" />
+                                                <div className="img-hover-overlay">
+                                                    <ZoomIn size={18} /> Click to expand
+                                                </div>
+                                            </div>
+                                            <div className="caption">
+                                                <strong>Sanctuary Alterations:</strong> Installation of the wooden partition divider and floor.
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            className="timeline-img-card"
+                                            onClick={() => setLightboxItem({
+                                                title: 'Completed In 1990: Refurbished Sanctuary',
+                                                description: 'The refurbished main sanctuary in 1990, featuring comfortable modern chairs, redecorated chancel arch, and celebration banner.',
+                                                url: history1990Completed
+                                            })}
+                                        >
+                                            <div className="img-container">
+                                                <img src={history1990Completed} alt="Sanctuary Completed In 1990" />
+                                                <div className="img-hover-overlay">
+                                                    <ZoomIn size={18} /> Click to expand
+                                                </div>
+                                            </div>
+                                            <div className="caption">
+                                                <strong>Completed In 1990:</strong> Refurbished sanctuary with flexible chairs and wall banner.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* 1992 */}
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-year">1992</div>
+                                <div className="timeline-content">
+                                    <span className="timeline-badge">Fellowship & Community</span>
+                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.2rem', marginBottom: '8px' }}>Sanctuary Alterations & Move to Back Room</h3>
+                                    <p style={{ fontSize: '0.95rem', color: 'var(--gray-500)', lineHeight: 1.6 }}>
+                                        Further building improvements took place in 1992. While the main sanctuary was being altered, Sunday services and mid-week prayer meetings moved temporarily into the back hall, maintaining uninterrupted worship and an intimate family atmosphere.
+                                    </p>
+
+                                    <div className="timeline-images">
+                                        <div
+                                            className="timeline-img-card"
+                                            onClick={() => setLightboxItem({
+                                                title: '1992: Services in the Back Room',
+                                                description: 'Church moves to the back room whilst the main sanctuary is altered.',
+                                                url: history1992BackRoom
+                                            })}
+                                        >
+                                            <div className="img-container">
+                                                <img src={history1992BackRoom} alt="1992 Church in the back room" />
+                                                <div className="img-hover-overlay">
+                                                    <ZoomIn size={18} /> Click to expand
+                                                </div>
+                                            </div>
+                                            <div className="caption">
+                                                <strong>1992:</strong> Church moves to the back room whilst main sanctuary is altered.
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            className="timeline-img-card"
+                                            onClick={() => setLightboxItem({
+                                                title: '1992: Chapel from Infants School Playground',
+                                                description: 'View of the South Molton Baptist Church building and courtyard from the Infants School Playground in 1992.',
+                                                url: history1992Playground
+                                            })}
+                                        >
+                                            <div className="img-container">
+                                                <img src={history1992Playground} alt="1992 Church from Infants School Playground" />
+                                                <div className="img-hover-overlay">
+                                                    <ZoomIn size={18} /> Click to expand
+                                                </div>
+                                            </div>
+                                            <div className="caption">
+                                                <strong>1992:</strong> Church exterior as viewed from the Infants School Playground.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* 1993 */}
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-year">1993</div>
+                                <div className="timeline-content">
+                                    <span className="timeline-badge">Hospitality</span>
+                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.2rem', marginBottom: '8px' }}>Fellowship in the Upper Room</h3>
+                                    <p style={{ fontSize: '0.95rem', color: 'var(--gray-500)', lineHeight: 1.6 }}>
+                                        With the completion of the Upper Room, church members gathered for coffee, Bible study, and fellowship. Archival photography captures members sharing refreshments together, an enduring tradition that continues after every Sunday service today.
+                                    </p>
+
+                                    <div className="timeline-images" style={{ gridTemplateColumns: 'minmax(280px, 450px)' }}>
+                                        <div
+                                            className="timeline-img-card"
+                                            onClick={() => setLightboxItem({
+                                                title: '1993: Coffee in the Upper Room',
+                                                description: 'Church members enjoying coffee together in the Upper Room in 1993. Left to Right: Diana Barker, David Barker, Julie Kingett, Joan + Alf.',
+                                                url: history1993UpperRoom
+                                            })}
+                                        >
+                                            <div className="img-container" style={{ height: '220px' }}>
+                                                <img src={history1993UpperRoom} alt="1993 Coffee in the Upper Room" />
+                                                <div className="img-hover-overlay">
+                                                    <ZoomIn size={18} /> Click to expand
+                                                </div>
+                                            </div>
+                                            <div className="caption">
+                                                <strong>1993 Coffee in the Upper Room:</strong> (L to R) Diana Barker, David Barker, Julie Kingett, Joan + Alf.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Present Day */}
+                            <div className="timeline-item">
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-year">Today</div>
+                                <div className="timeline-content">
+                                    <span className="timeline-badge">A Living Legacy</span>
+                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.2rem', marginBottom: '8px' }}>A Welcoming Community with Jesus at the Centre</h3>
+                                    <p style={{ fontSize: '0.95rem', color: 'var(--gray-500)', lineHeight: 1.6 }}>
+                                        Today, South Molton Baptist Church stands firmly on this rich heritage. With ongoing investments into audio-visual equipment, accessibility ramps, and warm hospitality, we remain committed to Christ, to each other, and to sharing His love throughout South Molton.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Archival Documents Box */}
+                        <div className="history-archive-box">
+                            <div className="history-archive-header">
+                                <div>
+                                    <h3 style={{ color: 'var(--primary)', fontSize: '1.4rem', marginBottom: '4px' }}>
+                                        Authentic Historical Archives & Scanned Records
+                                    </h3>
+                                    <p style={{ color: 'var(--gray-500)', fontSize: '0.95rem', margin: 0 }}>
+                                        High-resolution scans of the original historical photographic records and handwritten church notes. Click any document to inspect in full detail.
+                                    </p>
+                                </div>
+                                <div>
+                                    <span style={{ fontSize: '0.85rem', color: 'var(--primary)', fontWeight: 600, backgroundColor: 'var(--white)', padding: '6px 14px', borderRadius: 'var(--radius-full)', border: '1px solid var(--secondary-light)', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                                        <FileText size={16} /> 3 Original Archive Sheets
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div className="history-archive-grid">
+                                {/* Archive Sheet 1 */}
+                                <div
+                                    className="archive-card"
+                                    onClick={() => setLightboxItem({
+                                        title: 'Church Archive Record: Easter 1988 Sanctuary Renovation',
+                                        description: 'Original historical archive page with handwritten annotations: "EASTER 1988. INTERIOR OF CHURCH BEFORE REMOVAL OF PEWS AND REDECORATION" and "WORK IN PROGRESS".',
+                                        url: historyArchive1988
+                                    })}
+                                >
+                                    <div className="archive-thumb-wrap">
+                                        <img src={historyArchive1988} alt="Easter 1988 Church Archive Record" />
+                                        <div className="archive-overlay">
+                                            <ZoomIn size={28} />
+                                            <span>Inspect Full Document</span>
+                                        </div>
+                                    </div>
+                                    <div className="archive-card-body">
+                                        <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--accent)', textTransform: 'uppercase', marginBottom: '4px' }}>
+                                            Archive Record &bull; Easter 1988
+                                        </span>
+                                        <h4 style={{ color: 'var(--primary)', fontSize: '1.05rem', marginBottom: '6px' }}>
+                                            Pews Removal & Work in Progress
+                                        </h4>
+                                        <p style={{ fontSize: '0.85rem', color: 'var(--gray-500)', lineHeight: 1.4, margin: 0 }}>
+                                            Original sheet showing the sanctuary before removal of the pews alongside the inner doorway construction and ladders.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Archive Sheet 2 */}
+                                <div
+                                    className="archive-card"
+                                    onClick={() => setLightboxItem({
+                                        title: 'Church Archive Record: 1990 Sanctuary Completion',
+                                        description: 'Original historical archive page documenting the partition wall construction and the redecorated sanctuary marked "Completed In 1990".',
+                                        url: historyArchive1990
+                                    })}
+                                >
+                                    <div className="archive-thumb-wrap">
+                                        <img src={historyArchive1990} alt="1990 Church Archive Record" />
+                                        <div className="archive-overlay">
+                                            <ZoomIn size={28} />
+                                            <span>Inspect Full Document</span>
+                                        </div>
+                                    </div>
+                                    <div className="archive-card-body">
+                                        <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--accent)', textTransform: 'uppercase', marginBottom: '4px' }}>
+                                            Archive Record &bull; 1990
+                                        </span>
+                                        <h4 style={{ color: 'var(--primary)', fontSize: '1.05rem', marginBottom: '6px' }}>
+                                            Sanctuary Completed in 1990
+                                        </h4>
+                                        <p style={{ fontSize: '0.85rem', color: 'var(--gray-500)', lineHeight: 1.4, margin: 0 }}>
+                                            Original sheet showing the wood partition installation and the finished sanctuary with comfortable chairs and celebration banner.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Archive Sheet 3 */}
+                                <div
+                                    className="archive-card"
+                                    onClick={() => setLightboxItem({
+                                        title: 'Church Archive Record: 1992–1993 Sanctuary Alterations & Upper Room',
+                                        description: 'Original historical archive page with handwritten records: "1992 Church moves to the back room whilst the main sanctuary is altered", "1993 Coffee in the Upper Room", and "1992 Church from Infants School Playground".',
+                                        url: historyArchive1992
+                                    })}
+                                >
+                                    <div className="archive-thumb-wrap">
+                                        <img src={historyArchive1992} alt="1992-1993 Church Archive Record" />
+                                        <div className="archive-overlay">
+                                            <ZoomIn size={28} />
+                                            <span>Inspect Full Document</span>
+                                        </div>
+                                    </div>
+                                    <div className="archive-card-body">
+                                        <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--accent)', textTransform: 'uppercase', marginBottom: '4px' }}>
+                                            Archive Record &bull; 1992–1993
+                                        </span>
+                                        <h4 style={{ color: 'var(--primary)', fontSize: '1.05rem', marginBottom: '6px' }}>
+                                            Back Room, Upper Room & Grounds
+                                        </h4>
+                                        <p style={{ fontSize: '0.85rem', color: 'var(--gray-500)', lineHeight: 1.4, margin: 0 }}>
+                                            Original sheet recording the 1992 back room services, 1993 Upper Room coffee with named members, and playground view.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -423,6 +762,33 @@ export default function About() {
                 )}
 
             </div>
+
+            {/* History Lightbox Modal */}
+            {lightboxItem && (
+                <div className="lightbox" onClick={() => setLightboxItem(null)}>
+                    <button
+                        className="lightbox-close"
+                        onClick={() => setLightboxItem(null)}
+                        aria-label="Close image preview"
+                    >
+                        <X size={32} />
+                    </button>
+
+                    <div className="lightbox-content" onClick={(e) => e.stopPropagation()} style={{ textAlign: 'center' }}>
+                        <img
+                            src={lightboxItem.url}
+                            alt={lightboxItem.title}
+                            className="lightbox-img"
+                        />
+                        <div className="lightbox-caption" style={{ maxWidth: '750px', margin: '16px auto 0' }}>
+                            <h3 style={{ color: 'var(--white)', fontSize: '1.25rem', marginBottom: '6px' }}>{lightboxItem.title}</h3>
+                            <p style={{ fontSize: '0.95rem', color: '#c8d2c9', lineHeight: 1.5 }}>
+                                {lightboxItem.description}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
