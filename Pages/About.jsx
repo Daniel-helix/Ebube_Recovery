@@ -19,6 +19,7 @@ import history1990Completed from '../assets/history_1990_completed_interior.jpg'
 import history1992BackRoom from '../assets/history_1992_back_room.jpg';
 import history1993UpperRoom from '../assets/history_1993_upper_room.jpg';
 import history1992Playground from '../assets/history_1992_infants_playground.jpg';
+import fellowshipTeaCoffee from '../assets/fellowship_tea_coffee.jpg';
 
 export default function About() {
     const location = useLocation();
@@ -146,9 +147,9 @@ export default function About() {
 
                             <div>
                                 <img
-                                    src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&q=80&w=600"
-                                    alt="Refreshments, coffee and home bakes"
-                                    style={{ borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-md)', marginBottom: '16px' }}
+                                    src={fellowshipTeaCoffee}
+                                    alt="Church members serving refreshments and tea at the kitchen hatch"
+                                    style={{ borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-md)', marginBottom: '16px', width: '100%', height: '260px', objectFit: 'cover' }}
                                 />
                                 <div style={{ padding: '16px', background: 'var(--light)', borderRadius: 'var(--radius-md)', border: '1px solid var(--gray-200)' }}>
                                     <h4 style={{ color: 'var(--primary)', marginBottom: '6px', fontSize: '1rem' }}>Refreshments & Fellowship</h4>

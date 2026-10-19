@@ -22,11 +22,37 @@ import history1992BackRoom from '../assets/history_1992_back_room.jpg';
 import history1993UpperRoom from '../assets/history_1993_upper_room.jpg';
 import history1992Playground from '../assets/history_1992_infants_playground.jpg';
 
+// Fellowship & Community Photos
+import fellowshipTeaCoffee from '../assets/fellowship_tea_coffee.jpg';
+import sundayServiceFellowship from '../assets/sunday_service_fellowship.jpg';
+import communityConversations from '../assets/community_conversations.jpg';
+
 export default function Gallery() {
     const [activeFilter, setActiveFilter] = useState('all');
     const [lightboxIndex, setLightboxIndex] = useState(null);
 
     const images = [
+        {
+            id: 26,
+            category: 'church-life',
+            title: 'Sunday Morning Fellowship in the Sanctuary',
+            description: 'Our church family gathered together in the main sanctuary sharing conversation and warm fellowship after the morning service.',
+            url: sundayServiceFellowship
+        },
+        {
+            id: 27,
+            category: 'church-life',
+            title: 'Coffee & Refreshments at the Hatch',
+            description: 'Volunteers and members serving fresh tea, filter coffee, and refreshments through the kitchen servery after worship.',
+            url: fellowshipTeaCoffee
+        },
+        {
+            id: 28,
+            category: 'church-life',
+            title: 'Post-Service Community & Conversation',
+            description: 'Members and visitors connecting, catching up, and enjoying friendship together in the light-filled chapel.',
+            url: communityConversations
+        },
         {
             id: 9,
             category: 'church-life',
