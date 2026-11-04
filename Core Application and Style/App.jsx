@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Activities from './pages/Activities';
-import Services from './pages/Services';
-import Hire from './pages/Hire';
-import Gallery from './pages/Gallery';
-import Posts from './pages/Posts';
-import Running from './pages/Running';
-import Contact from './pages/Contact';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Activities from './Pages/Activities';
+import Services from './Pages/Services';
+import Hire from './Pages/Hire';
+import Gallery from './Pages/Gallery';
+import Posts from './Pages/Posts';
+import Running from './Pages/Running';
+import Contact from './Pages/Contact';
 
 export default function App() {
     return (
