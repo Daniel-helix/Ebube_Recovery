@@ -39,7 +39,7 @@ export default function Activities() {
                                 <h2 style={{ fontSize: '1.75rem', color: 'var(--primary)' }}>Renew Wellbeing Café</h2>
                             </div>
                             <span style={{ display: 'inline-block', backgroundColor: 'var(--accent)', color: 'var(--white)', padding: '4px 12px', borderRadius: 'var(--radius-full)', fontSize: '0.8rem', fontWeight: 700, marginBottom: '16px' }}>
-                                THURSDAYS 1:30 PM - 3:30 PM
+                                1ST & 3RD WEDNESDAYS 1:30 PM - 3:30 PM
                             </span>
                             <p style={{ color: 'var(--gray-500)', marginBottom: '16px', fontSize: '1rem' }}>
                                 Our Renew Wellbeing space is a quiet, friendly place in our building where "it's OK not to be OK." It is styled around a traditional café with tables and soft seating, but there is no charge for anything.
@@ -48,7 +48,7 @@ export default function Activities() {
                                 You can join in with simple, shared hobbies and activities (like board games, knitting, jigsaw puzzles, painting) or simply sit quietly with a hot drink. A separate quiet room is available for silent reflection, prayer, or quiet contemplation.
                             </p>
                             <div style={{ backgroundColor: 'var(--light)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--gray-200)' }}>
-                                <strong>Key Contact:</strong> Helen (Church Secretary) &bull; <span style={{ color: 'var(--gray-500)' }}>Drop in on Thursday, or contact the office for details.</span>
+                                <strong>Key Contact:</strong> Helen (Church Secretary) &bull; <span style={{ color: 'var(--gray-500)' }}>Drop in on the 1st or 3rd Wednesday, or contact the office for details.</span>
                             </div>
                         </div>
                         <div>
@@ -95,7 +95,7 @@ export default function Activities() {
                                 <h2 style={{ fontSize: '1.75rem', color: 'var(--primary)' }}>Sunflowers Parents & Toddlers</h2>
                             </div>
                             <span style={{ display: 'inline-block', backgroundColor: 'var(--accent)', color: 'var(--white)', padding: '4px 12px', borderRadius: 'var(--radius-full)', fontSize: '0.8rem', fontWeight: 700, marginBottom: '16px' }}>
-                                TUESDAYS 10:00 AM - 11:30 AM (TERM TIME)
+                                FRIDAYS 9:30 AM - 11:30 AM (TERM TIME)
                             </span>
                             <p style={{ color: 'var(--gray-500)', marginBottom: '16px', fontSize: '1rem' }}>
                                 Sunflowers is our long-running group for babies, toddlers, and their parents, grandparents, or childminders. We provide a large selection of toys, sensory items, building blocks, and an active craft table.

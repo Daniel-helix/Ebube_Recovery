@@ -131,14 +131,14 @@ export default function Home() {
                                 <p style={{ fontSize: '0.85rem', color: 'var(--gray-500)' }}>Worship, Biblically-centered children's talk, Lighthouse groups & Creche. Refreshments follow.</p>
                             </div>
                             <div className="announcement-item">
-                                <div className="announcement-time">Tuesday 10:00 AM</div>
-                                <strong style={{ display: 'block', margin: '4px 0' }}>Sunflowers Parents & Toddlers</strong>
-                                <p style={{ fontSize: '0.85rem', color: 'var(--gray-500)' }}>Playtime, crafts, stories, and songs for children. A friendly chat and refreshments for parents.</p>
-                            </div>
-                            <div className="announcement-item">
-                                <div className="announcement-time">Thursday 1:30 PM</div>
+                                <div className="announcement-time">1st & 3rd Wednesday 1:30 PM</div>
                                 <strong style={{ display: 'block', margin: '4px 0' }}>Renew Wellbeing Cafe</strong>
                                 <p style={{ fontSize: '0.85rem', color: 'var(--gray-500)' }}>A quiet, friendly space to share hobbies, enjoy a coffee, and practice mental wellbeing techniques.</p>
+                            </div>
+                            <div className="announcement-item">
+                                <div className="announcement-time">Friday 9:30 AM - 11:30 AM</div>
+                                <strong style={{ display: 'block', margin: '4px 0' }}>Sunflowers Parents & Toddlers</strong>
+                                <p style={{ fontSize: '0.85rem', color: 'var(--gray-500)' }}>Playtime, crafts, stories, and songs for children. A friendly chat and refreshments for parents.</p>
                             </div>
                             <div className="announcement-item">
                                 <div className="announcement-time">Friday 6:00 PM</div>
