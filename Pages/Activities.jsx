@@ -39,7 +39,7 @@ export default function Activities() {
                                 <h2 style={{ fontSize: '1.75rem', color: 'var(--primary)' }}>Renew Wellbeing Café</h2>
                             </div>
                             <span style={{ display: 'inline-block', backgroundColor: 'var(--accent)', color: 'var(--white)', padding: '4px 12px', borderRadius: 'var(--radius-full)', fontSize: '0.8rem', fontWeight: 700, marginBottom: '16px' }}>
-                                1ST & 3RD WEDNESDAYS 1:30 PM - 3:30 PM
+                                1ST & 3RD WEDNESDAYS 9:30 AM - 12:30 PM
                             </span>
                             <p style={{ color: 'var(--gray-500)', marginBottom: '16px', fontSize: '1rem' }}>
                                 Our Renew Wellbeing space is a quiet, friendly place in our building where "it's OK not to be OK." It is styled around a traditional café with tables and soft seating, but there is no charge for anything.
@@ -48,7 +48,7 @@ export default function Activities() {
                                 You can join in with simple, shared hobbies and activities (like board games, knitting, jigsaw puzzles, painting) or simply sit quietly with a hot drink. A separate quiet room is available for silent reflection, prayer, or quiet contemplation.
                             </p>
                             <div style={{ backgroundColor: 'var(--light)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--gray-200)' }}>
-                                <strong>Key Contact:</strong> Helen (Church Secretary) &bull; <span style={{ color: 'var(--gray-500)' }}>Drop in on the 1st or 3rd Wednesday, or contact the office for details.</span>
+                                <strong>Key Contact:</strong> Christine &bull; <span style={{ color: 'var(--gray-500)' }}>Drop in on the 1st or 3rd Wednesday.</span>
                             </div>
                         </div>
                         <div>
@@ -101,10 +101,10 @@ export default function Activities() {
                                 Sunflowers is our long-running group for babies, toddlers, and their parents, grandparents, or childminders. We provide a large selection of toys, sensory items, building blocks, and an active craft table.
                             </p>
                             <p style={{ color: 'var(--gray-500)', marginBottom: '16px' }}>
-                                We finish each session with a snack for the children, followed by a story and a group singing session. Hot drinks and home-baked biscuits are provided for the adults, making it a great place to chat and find mutual support.
+                                Each session includes a snack for the children, followed by a story and a group singing session. Hot drinks and biscuits are provided for the adults, making it a great place to chat and find mutual support.
                             </p>
                             <div style={{ backgroundColor: 'var(--light)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--gray-200)' }}>
-                                <strong>Key Contact:</strong> Christine &bull; <span style={{ color: 'var(--gray-500)' }}>Admission is £1.50 per family. No pre-booking required.</span>
+                                <strong>Key Contact:</strong> Andy &bull; <span style={{ color: 'var(--gray-500)' }}>Admission - Donations are invited. No pre-booking required.</span>
                             </div>
                         </div>
                     </div>
@@ -128,11 +128,8 @@ export default function Activities() {
                             <p style={{ color: 'var(--gray-500)', marginBottom: '16px', fontSize: '1rem' }}>
                                 Lighthouse is our children's ministry. On Sundays, children start in the main service with their families and then go to the back halls for Lighthouse. We have interactive games, drama, and bible lessons tailored for different age groups.
                             </p>
-                            <p style={{ color: 'var(--gray-500)', marginBottom: '16px' }}>
-                                On select Friday evenings, we also host the Lighthouse Youth Club for primary school children (years 3 to 6). It's a lively evening of sports, video games, crafts, tuck shop, and short Christian reflections.
-                            </p>
                             <div style={{ backgroundColor: 'var(--light)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--gray-200)' }}>
-                                <strong>Key Contact:</strong> Chieme & Janet Lock &bull; <span style={{ color: 'var(--gray-500)' }}>All our helpers are fully DBS-checked and safeguarding-trained.</span>
+                                <strong>Key Contact:</strong> Belinda, Glo & Christine &bull; <span style={{ color: 'var(--gray-500)' }}>All our helpers are fully DBS-checked and safeguarding-trained.</span>
                             </div>
                         </div>
                         <div>
@@ -168,15 +165,15 @@ export default function Activities() {
                                 COMMUNITY PRODUCTIONS & EVENTS
                             </span>
                             <p style={{ color: 'var(--gray-500)', marginBottom: '16px', fontSize: '1rem' }}>
-                                At SMBC, we believe drama, theater, and music are fantastic ways to connect and bring the Bible to life. We regularly run community theater and drama productions that get the whole town involved.
+                                We do two annual drama productions of the nativity and the Passion involving local churches and townspeople
                             </p>
                             <ul style={{ listStyleType: 'disc', paddingLeft: '20px', color: 'var(--gray-500)', marginBottom: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                 <li><strong>Living Nativity:</strong> Retelling the Christmas story outside in the garden with real animals, music, and narration, attracting hundreds of visitors.</li>
-                                <li><strong>Easter Passion Play:</strong> A street-theater style dramatisation of the trial, crucifixion, and resurrection of Jesus Christ, performed in the town square.</li>
-                                <li><strong>Showcase:</strong> An annual variety and talent night hosted in our main space, showcasing local musical, poetic, and dramatic talents.</li>
+                                <li><strong>Easter Passion Play:</strong> A street-theatre style dramatisation of the trial, crucifixion, and resurrection of Jesus Christ, performed in the town square.</li>
+                                <li><strong>Showcase:</strong> Term-time performing arts workshops for 11-16 yr olds with three annual performances.</li>
                             </ul>
                             <div style={{ backgroundColor: 'var(--light)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--gray-200)' }}>
-                                <strong>Key Contact:</strong> Andy (Minister) &bull; <span style={{ color: 'var(--gray-500)' }}>Photos of these can be browsed in our <a href="/gallery" style={{ fontWeight: 'bold' }}>Gallery page</a>.</span>
+                                <strong>Key Contact:</strong> Helen & Christine &bull; <span style={{ color: 'var(--gray-500)' }}>Photos of these can be browsed in our <a href="/gallery" style={{ fontWeight: 'bold' }}>Gallery page</a>.</span>
                             </div>
                         </div>
                     </div>

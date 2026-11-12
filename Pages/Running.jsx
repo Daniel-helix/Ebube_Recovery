@@ -19,38 +19,38 @@ export default function Running() {
         <div className="container section-padding fade-in">
             <div className="section-header">
                 <h1 className="section-title">Running the Church</h1>
-                <p className="section-subtitle">Governance details, memberships, standing orders, and official safeguarding policies.</p>
+                <p className="section-subtitle">Governance details, partnership, standing orders, and official safeguarding policies.</p>
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '64px' }}>
 
-                {/* MEMBERSHIP & MEETINGS */}
-                <section id="membership" style={{ scrollMarginTop: '100px' }}>
+                {/* PARTNERSHIP & MEETINGS */}
+                <section id="partnership" style={{ scrollMarginTop: '100px' }}>
                     <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '40px', alignItems: 'center' }}>
                         <div>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
                                 <div style={{ backgroundColor: 'var(--primary-bg)', color: 'var(--primary)', padding: '10px', borderRadius: 'var(--radius-sm)' }}>
                                     <Users size={28} />
                                 </div>
-                                <h2 style={{ fontSize: '1.75rem', color: 'var(--primary)' }}>Membership & Church Meetings</h2>
+                                <h2 style={{ fontSize: '1.75rem', color: 'var(--primary)' }}>Partnership & Church Meetings</h2>
                             </div>
                             <p style={{ color: 'var(--gray-500)', marginBottom: '16px', fontSize: '1rem' }}>
-                                In a Baptist church, the ultimate authority for making decisions lies with the local congregation. This is done through our formal church membership and regular Members Meetings.
+                                In a Baptist church, the ultimate authority for making decisions lies with the local congregation. This is done through our formal church partnership and regular partnership Meetings.
                             </p>
                             <p style={{ color: 'var(--gray-500)', marginBottom: '16px' }}>
-                                <strong>What is Membership?</strong> Members are individuals who have made a commitment to support the church through prayer, attendance, financial giving, and using their talents. Members vote on key issues, such as appointing the minister, electing deacons, and agreeing on budgets.
+                                <strong>What is Partnership?</strong> Partners are individuals who have made a commitment to support the church through prayer, attendance, financial giving, and using their talents. Partners vote on key issues, such as appointing the minister, electing deacons, and agreeing on budgets.
                             </p>
                             <p style={{ color: 'var(--gray-500)', marginBottom: '20px' }}>
-                                <strong>How to Become a Member:</strong> If you love Jesus Christ, have covenanted to walk in faith with us, and have been baptized as a believer (or are willing to discuss this), please speak to our minister Andy. We hold short membership preparation sessions to discuss our covenant and history.
+                                <strong>How to Become a Partner:</strong> If you love Jesus Christ, have covenanted to walk in faith with us, and have been baptized as a believer (or are willing to discuss this), please speak to our minister Andy. We hold a short partnership preparation visit to discuss our covenant and history.
                             </p>
                             <div style={{ backgroundColor: 'var(--light)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--gray-200)' }}>
-                                <strong>Members Meetings:</strong> Held bi-monthly on Tuesday evenings at 7:30 PM in the Beacon room. Agenda items are published in the Sunday notices 2 weeks in advance.
+                                <strong>Partnership Meetings:</strong> Held quarterly on Thursday evenings at 7:30 PM in the main church space. Agenda items are sent out to partners in advance regarding meetings.
                             </div>
                         </div>
                         <div>
                             <img
                                 src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=600"
-                                alt="Church members business meeting"
+                                alt="Church partnership business meeting"
                                 style={{ borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-md)' }}
                             />
                         </div>
@@ -71,7 +71,7 @@ export default function Running() {
                                 </p>
                                 <div style={{ background: 'var(--white)', padding: '16px', borderRadius: 'var(--radius-sm)', border: '1px solid var(--gray-200)', fontSize: '0.9rem', textAlign: 'left', lineHeight: 1.6 }}>
                                     <div><strong>Account Name:</strong> South Molton Baptist Church</div>
-                                    <div><strong>Bank:</strong> Lloyds Bank plc</div>
+                                    <div><strong>Bank:</strong> Nat West Bank plc</div>
                                     <div><strong>Sort Code:</strong> 30-90-89</div>
                                     <div><strong>Account No:</strong> 00234567</div>
                                 </div>
@@ -96,7 +96,7 @@ export default function Running() {
                                 <li><strong>Christians Against Poverty (CAP):</strong> Supporting the local debt-counseling center in North Devon.</li>
                                 <li><strong>WellFound:</strong> Supporting clean water, hygiene, and toilet-construction initiatives in isolated communities.</li>
                                 <li><strong>Open Doors:</strong> Assisting persecuted Christians worldwide with legal aid, literature, and relief.</li>
-                                <li><strong>SCWP (South Children's Work Project):</strong> Supporting youth workers in local state schools.</li>
+                                <li><strong>SCWP (Schools and Children's Work Project):</strong> supporting a youth worker in schools located in Oswestry.</li>
                             </ul>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ export default function Running() {
                                 <h2 style={{ fontSize: '1.75rem', color: 'var(--primary)' }}>Official Church Policies</h2>
                             </div>
                             <p style={{ color: 'var(--gray-500)', marginBottom: '16px', fontSize: '1rem' }}>
-                                We are committed to providing safe, healthy, and supportive environments for all children, vulnerable adults, helpers, and visitors. Our policies are updated annually by the trustees and approved at our Annual General Meeting.
+                                We are committed to providing safe, healthy, and supportive environments for all children, vulnerable adults, helpers, and visitors. Our policies are reviewed annually by the trustees and approved at our Partnership Meetings.
                             </p>
                             <p style={{ color: 'var(--gray-500)', marginBottom: '20px' }}>
                                 If you have any questions or concern regarding safeguarding, please immediately contact our Designated Person for Safeguarding (DPS) <strong>Janet Lock</strong> or minister Andy. You can download our full policy documents opposite.
@@ -160,7 +160,7 @@ export default function Running() {
                                 <div className="download-info">
                                     <FileText className="download-icon" size={24} />
                                     <div>
-                                        <strong style={{ fontSize: '0.9rem' }}>Bullying & Safeguarding</strong>
+                                        <strong style={{ fontSize: '0.9rem' }}>Bullying & Sexual Harrassment</strong>
                                         <div style={{ fontSize: '0.75rem', color: 'var(--gray-500)' }}>PDF &bull; 620 KB</div>
                                     </div>
                                 </div>

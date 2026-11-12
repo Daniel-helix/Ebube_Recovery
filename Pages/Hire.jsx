@@ -26,9 +26,9 @@ export default function Hire() {
 
     // Calculate pricing
     const roomRates = {
-        main: 22,
-        beacon: 16,
-        lighthouse: 14
+        main: 21,
+        beacon: 10.50,
+        lighthouse: 7.50
     };
 
     const calculateTotal = () => {
@@ -80,7 +80,7 @@ export default function Hire() {
                                 <p style={{ fontSize: '0.9rem', color: 'var(--gray-500)', marginBottom: '12px' }}>
                                     Our largest room. It has flexible seating for up to 120 people, underfloor heating, full PA/sound system, and audio-visual projector screens. Ideal for lectures, concerts, and large community meetings.
                                 </p>
-                                <strong>Rate: £22 per hour</strong>
+                                <strong>Rate: £21 per hour & £40 for 3 hours</strong>
                             </div>
                         </div>
 
@@ -89,25 +89,9 @@ export default function Hire() {
                             <div style={{ flexGrow: 1 }}>
                                 <h3 style={{ color: 'var(--primary)', marginBottom: '6px', fontSize: '1.2rem' }}>The Beacon Room</h3>
                                 <p style={{ fontSize: '0.9rem', color: 'var(--gray-500)', marginBottom: '12px' }}>
-                                    A cozy, carpeted meeting room featuring comfortable seating for up to 25 people. Great for committee meetings, counseling groups, training courses, and craft activities.
+                                    A cozy, meeting room featuring comfortable seating for up to 25 people. Great for committee meetings, counseling groups, training courses, and craft activities.
                                 </p>
-                                <strong>Rate: £16 per hour</strong>
-                            </div>
-                        </div>
-
-                        {/* Lighthouse Room */}
-                        <div style={{ display: 'flex', gap: '24px', background: 'var(--light)', padding: '24px', borderRadius: 'var(--radius-lg)', border: '1px solid var(--gray-200)', flexWrap: 'wrap' }}>
-                            <img
-                                src={sunflowersPlaytime}
-                                alt="Lighthouse Room Playgroup Setup"
-                                style={{ width: '180px', height: '120px', borderRadius: 'var(--radius-md)', objectFit: 'cover', flexShrink: 0 }}
-                            />
-                            <div style={{ flexGrow: 1, minWidth: '200px' }}>
-                                <h3 style={{ color: 'var(--primary)', marginBottom: '6px', fontSize: '1.2rem' }}>Lighthouse Room</h3>
-                                <p style={{ fontSize: '0.9rem', color: 'var(--gray-500)', marginBottom: '12px' }}>
-                                    A bright, practical space with wipe-clean flooring. Equipped with toys, toddler-sized furniture, and child-safe features. Perfect for children's birthday parties and playgroups.
-                                </p>
-                                <strong>Rate: £14 per hour</strong>
+                                <strong>Rate: £10.50 per hour</strong>
                             </div>
                         </div>
 

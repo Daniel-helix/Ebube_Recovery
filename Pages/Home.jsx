@@ -78,7 +78,7 @@ export default function Home() {
                                 <MapPin size={20} style={{ color: 'var(--primary)' }} />
                                 <div>
                                     <strong>Location</strong>
-                                    <div style={{ fontSize: '0.9rem', color: 'var(--gray-500)' }}>New Road, South Molton</div>
+                                    <div style={{ fontSize: '0.9rem', color: 'var(--gray-500)' }}>New Road, South Molton. EX36 4BH</div>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +229,7 @@ export default function Home() {
                                 "As minister here at South Molton Baptist Church, I am thrilled to welcome you to our website and invite you to join us! We want this church to be a place where everyone can feel safe, valued, and encouraged. Come along just as you are."
                             </blockquote>
                             <p style={{ color: 'var(--gray-500)', marginBottom: '24px' }}>
-                                Andy works alongside our leadership team of trustees and dedicated members to facilitate worship, children's groups, pastoral care, and building hires.
+                                Andy works alongside our leadership team of trustees and dedicated members to facilitate worship services, pastoral care and ministry in local school and a care home.
                             </p>
                             <Link to="/about#team" className="btn btn-secondary">Meet the Leadership Team</Link>
                         </div>
@@ -251,7 +251,7 @@ export default function Home() {
                             <div className="map-card">
                                 <Leaf size={24} style={{ color: 'var(--primary)', marginBottom: '8px' }} />
                                 <strong>South Molton Baptist Church</strong>
-                                <p style={{ fontSize: '0.85rem', color: 'var(--gray-500)', margin: '8px 0' }}>28 New Road, South Molton, Devon, EX36 4BH</p>
+                                <p style={{ fontSize: '0.85rem', color: 'var(--gray-500)', margin: '8px 0' }}>New Road, South Molton, Devon, EX36 4BH</p>
                                 <a
                                     href="https://maps.google.com/?q=South+Molton+Baptist+Church"
                                     target="_blank"
@@ -277,7 +277,7 @@ export default function Home() {
                                 <div className="info-banner-icon"><Users size={24} /></div>
                                 <div>
                                     <strong>Parking & Access</strong>
-                                    <p style={{ fontSize: '0.9rem', color: 'var(--gray-500)' }}>On-street parking is available on New Road, and the Central Car Park is just a 3-minute walk away. Full wheelchair and pram access is provided.</p>
+                                    <p style={{ fontSize: '0.9rem', color: 'var(--gray-500)' }}>On-street parking is available on New Road, and the Central Car Park is just a 3-minute walk away, and the Parking sheep pen car park is a 1-minute walk away. Full wheelchair and pram access is provided.</p>
                                 </div>
                             </div>
                         </div>
